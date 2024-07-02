@@ -4,10 +4,21 @@
 }
 
 body{
-    width: 80%;
-    margin: 50px auto;
-    background: #ed0f0fa6;
+
     font-family: 'Montserrat', sans-serif; 
+    height: 100vh;
+}
+
+header, footer {
+    background: #FFFB7D;
+    height: 30px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
 }
 
 img{
@@ -28,4 +39,20 @@ a{
 
 .space{
     margin: 10px 0;
+}
+
+.goals {
+    padding: 50px 0;
+}
+
+.goals div {
+    padding: 10px 0;
+}
+.goals div p{
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.goals ol {
+    padding-top: 5px;
 }
