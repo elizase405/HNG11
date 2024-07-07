@@ -16,6 +16,10 @@ sequelize.sync()
         console.error("Error synchronizing the database");
     });
 
+app.get("/", (req, res) => {
+    res.send("Hello");
+})
+
 // Create User
 app.post("/auth/register", (req, res) => {
     const { firstName, lastName, email, password, phone } = req.body
