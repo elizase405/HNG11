@@ -17,7 +17,7 @@ sequelize.sync()
     });
 
 app.get("/", (req, res) => {
-    res.send("Hello");
+    res.send("Hello World");
 })
 
 // Create User
