@@ -1,5 +1,5 @@
-const sequelize = require("./db")
-const User = require("./models/user")
+const sequelize = require("../db")
+const User = require("../models/user")
 const express = require("express")
 const { ValidationError } = require("sequelize");
 
