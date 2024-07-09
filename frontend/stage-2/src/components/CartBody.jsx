@@ -3,6 +3,9 @@ import womenwatch2 from "../img/products/womenwatch2.png"
 import { Link } from "react-router-dom";
 
 const CartBody = () => {
+const handleCheckout = () => {
+	alert("Checkout complete!")
+}
 	return (
 		<div className="w-[80%] mx-auto">
 			<h3 className="font-bold text-2xl mt-10 mb-2">Your Cart</h3>
@@ -29,7 +32,7 @@ const CartBody = () => {
 						</div>
 					</div>
 				</div>
-				<button onClick={() => handleAddToCart(10)} className="block pt-2 mt-10 rounded-md text-center text-white h-10 w-5/5 md:w-2/5 bg-[#ff8000] mt-3 text-sm font-semibold pb-2">Continue to checkout</button>
+				<button onClick={handleCheckout} className="block pt-2 mt-10 rounded-md text-center text-white h-10 w-5/5 md:w-2/5 bg-[#ff8000] mt-3 text-sm font-semibold pb-2">Continue to checkout</button>
 			</div>
 		</div>
 
