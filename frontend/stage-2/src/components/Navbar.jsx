@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 	return (
 		<nav className="flex justify-around h-24 items-center max-w-full">
-			<h1 className="font-bold text-2xl sm:text-3xl lg:text-2xl mb-4">Steeze</h1>
+			<Link to="/" className="font-bold text-2xl sm:text-3xl lg:text-2xl mb-4">Steeze</Link>
 			<div className=" md:hidden
 			space-x-6">
 				<img src={search} className="w-6 h-6 sm:w-7 sm:h-7 inline cursor-pointer mb-4" alt="search_icon"/>
