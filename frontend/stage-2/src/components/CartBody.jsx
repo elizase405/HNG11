@@ -1,11 +1,12 @@
 import womenwatch from "../img/products/womenwatch.png"
 import womenwatch2 from "../img/products/womenwatch2.png"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CartBody = () => {
-const handleCheckout = () => {
-	alert("Checkout complete!")
-}
+	const navigate = useNavigate();
+	const handleCheckout = () => {
+		navigate("/checkout")
+	}
 	return (
 		<div className="w-[80%] mx-auto">
 			<h3 className="font-bold text-2xl mt-10 mb-2">Your Cart</h3>

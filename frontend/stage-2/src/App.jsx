@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Landing from "./pages/Landing";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
       <Products />} />
     			<Route path="/cart" element={
       <Cart />} />
+    			<Route path="/checkout" element={
+      <Checkout />} />
     		</Routes>
     	</BrowserRouter>
     </div>
